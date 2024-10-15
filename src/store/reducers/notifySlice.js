@@ -69,7 +69,7 @@ const notificationSlice = createSlice({
         state.loading = false;
         state.error = action.error.message;
       })
-      .addCase(markNotificationAsRead.pending, (state, action) => {
+      .addCase(markNotificationAsRead.pending, (state) => {
         state.loading = true;
       })
       .addCase(markNotificationAsRead.fulfilled, (state, action) => {

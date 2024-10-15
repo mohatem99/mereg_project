@@ -12,7 +12,7 @@ export default function SignUp() {
   const [selectedImage, setSelectedImage] = useState(null);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { loading, error } = useSelector((state) => state.auth);
+  const { loading } = useSelector((state) => state.auth);
 
   // Validation schema with Yup
   const validationSchema = Yup.object({
